@@ -1,0 +1,25 @@
+body::before{
+    display: block;
+    content: '';
+    height: 100px;
+}
+body::after{
+    display: block;
+    content: '';
+    height: 60px;
+}
+.animation{
+    animation:  all 5s ease-in-out ;
+    animation-iteration-count: 6;
+}
+@keyframes all {
+   to{
+    opacity: 0.5;
+    transform: perspective(1000px) scale(.90);
+   }
+   from{
+    opacity: 2;
+    transform: perspective(1000px) scale(1);
+   }
+    
+}
