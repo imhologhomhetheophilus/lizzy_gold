@@ -33,3 +33,8 @@ body::after {
     transform: perspective(1000px) scale(1);
   }
 }
+@media screen and (max-width: 567px) {
+  img {
+    width: fit-content;
+  }
+}
